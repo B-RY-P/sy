@@ -9,8 +9,10 @@ int main ()
    string str;
    string ans[100];
    stack<char> s;
+   char file_path[100];
+   cin>>file_path;
    string a[35]={"auto","break","case","char","const","continue","default","do","double","else","enum","extern","float","for","goto","if","int","long","register","return","short","signed","sizeof","static","struct","switch","typedef","union","unsigned","void","volatile","while"};
-   fp = fopen("data.txt","r");
+   fp = fopen(file_path,"r");
    while((c = fgetc(fp))!=EOF){
    	  if((c>='a'&&c<='z')||(c>='A'&&c<='Z')){
    	  	str+=c;
