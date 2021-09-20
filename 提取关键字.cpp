@@ -14,12 +14,12 @@ int main ()
    string a[35]={"auto","break","case","char","const","continue","default","do","double","else","enum","extern","float","for","goto","if","int","long","register","return","short","signed","sizeof","static","struct","switch","typedef","union","unsigned","void","volatile","while"};
    fp = fopen(file_path,"r");
    while((c = fgetc(fp))!=EOF){
-   	  if((c>='a'&&c<='z')||(c>='A'&&c<='Z')){
-   	  	str+=c;
-	  }
-	  else{
-	  	if(str!=""){
-		  for(i=0;i<35;i++){
+        if((c>='a'&&c<='z')||(c>='A'&&c<='Z')){
+   	      str+=c;
+        }
+       else{
+	      if(str!=""){
+	        for(i=0;i<35;i++){
 	  	   if(str==a[i]){
 	  		 cnt++;
 	  		 if(i==25){
@@ -72,7 +72,7 @@ int main ()
 		  	ans[l++]=str;
 		  	str="";
 		  }
-        }
+           }
        }
    }
    int g=0,b=0;
