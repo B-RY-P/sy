@@ -99,5 +99,5 @@ int main ()
    cout<<"if-else num: "<<g<<endl;
    cout<<"if-elseif-else num: "<<b<<endl;
    fclose(fp);
-   return(0);
+   return 0;
 }
