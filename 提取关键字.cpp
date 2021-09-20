@@ -58,7 +58,7 @@ int main ()
    }
    cout<<endl;
    fclose(fp);
-   int l=0,h;
+   int l=0;
    fp = fopen("data.txt","r");
    while((c = fgetc(fp))!=EOF){
       if((c>='a'&&c<='z')||(c>='A'&&c<='Z')){
