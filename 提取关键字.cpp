@@ -10,7 +10,7 @@ int main ()
    int j=0;
    string str;
    string ans[100];
-   stack<char> s;
+   stack<char>s;
    char file_path[100];
    cout<<"请输入文件路径：";
    cin>>file_path;
